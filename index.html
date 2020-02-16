@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One&display=swap" rel="stylesheet">
+	<title>meteojob</title>
+</head>
+<body>
+	<main>
+		<header>
+			<img src="assets/img/meteologo.png" alt="logo">
+			<h1>Créez votre profil Meteojob</h1>
+		</header>
+		<form method="post">
+			<section class="info">
+				<div class="prenom">
+					<label for="prenom">Prénom </label><br>
+					<input type="text" placeholder="Votre prénom" name="prenom" id="prenom" autofocus required>  
+				</div>
+				<div class="nom">
+					<label for="name">Nom </label><br>
+					<input type="text" placeholder="Votre nom" name="nom" id="name" required/>
+				</div>
+			</section>
+			<section class="position">
+				<div class="email">
+					<label for="email">Adresse e-mail </label><br>
+					<input type="email" placeholder="Votre adresse e-mail" id="email" required/>
+				</div>
+				<div class="password">
+					<div><label for="password">Mot de passe</label></div>
+					<div></div>
+					<input type="password" placeholder="Choisissez votre mot de passe" name="mot_de_passe" id="password" required>
+					<img src="assets/img/oeil.png" alt="">
+				</div>
+				<div class="postes">
+					<label for="postes">Postes recherchés</label><br> 
+					<input type="text" placeholder="Ex : Chef de projet,cuisinier "  name="Nom" autofocus id="postes" required >
+				</div>
+				<div class="endroit">
+					<label for="endroit">Où souhaitez-vous travailler? </label><br>
+					<input type="text" placeholder="Ex : Essonne, Nantes, Bretagne..." name="Nom" autofocus id="endroit" required>
+				</div>
+			</section>
+			<label>Type de contrat recherchés</label><br>
+			<section class="contrat">
+					<div class="cdi">
+						<input type="checkbox" checked="checked" name="contrat" id="cdi" /> 
+						<label for="cdi">CDI </label>
+					</div>
+					<div class="cdd">
+						<input type="checkbox" name="contrat" id="cdd" />
+						<label for="cdd">CDD </label>
+					</div>
+					<div class="franchise">
+						<input type="checkbox" name="contrat" id="Franchise" /> 
+						<label for="Franchise">Indépendant/ Franchisé</label>
+					</div>
+					<div class="interim">
+						<input type="checkbox" name="contrat" id="interim" />
+						<label for="interim">Intérim</label>
+					</div>
+					<div class="stage">
+						<input type="checkbox" name="contrat" id="stage" />
+						<label for="stage">Stage</label>
+					</div>
+					<div class="alternance">
+						<input type="checkbox" name="contrat" id="alternance" />
+						<label for="alternance">Alternance/ Apprentissage</label>
+					</div>
+					<div class="plus">
+						<span>+ de types de contrat </span>
+					</div>
+			</section>
+			<section class="conditions">
+				<div>
+					<label>J'accepte les <a href="">conditions générales</a> pour créer mon compte,
+					bénéficier des services de matching et postuler aux offres:</label>
+				</div>
+				<div class="container">
+					<div class="input_switch">
+						<input type="checkbox" checked="checked" name="">
+						<span class="on_off">
+							<span class="off">OUI</span>
+							<span class="on">NON</span>
+						</span>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="continuer">
+					<button type="button" name="footer" id="envoi">CONTINUER</button>
+				</div>
+			</footer>
+		</form>
+	</main>
+</body>
+</html>
