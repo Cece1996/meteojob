@@ -9,7 +9,6 @@ main{
 	width: 45vw;
 	font-family: 'Open Sans', sans-serif;
 	color: #16354E;
-	min-width: 45%;
 }
 .info label, .position label, section + label{
 	font-family: 'Open Sans', sans-serif;
